@@ -1,5 +1,11 @@
 FreelanceApi::Application.routes.draw do
+  get 'api/' => 'clients#api'
+  root to: "clients#api"
+
   devise_for :users
+
+  
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
