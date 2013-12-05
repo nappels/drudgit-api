@@ -1,7 +1,7 @@
 class ClientsController < ApplicationController
   respond_to :json
 
-  def api
+  def index
     respond_with Client.all
   end
 end

@@ -1,8 +1,10 @@
 FreelanceApi::Application.routes.draw do
-  get 'api/' => 'clients#api'
+  devise_for :users
+
   root to: "clients#api"
 
-  devise_for :users
+  get 'clients/' => 'clients#index'
+  
 
   
 
