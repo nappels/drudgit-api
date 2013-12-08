@@ -12,13 +12,8 @@ class ClientsController < ApplicationController
 
   def create
     @client = Client.new(safe_client_params)
-    respond_with(@client) do |format|
-      if @client.save
-        flash[:notice] = "client was created successfully."
-        format.html { redirect_to @client }
-      else
-        format.html { render :action => :new }
-      end
+    if @client.save   
+      respond_with @client
     end
   end
 
