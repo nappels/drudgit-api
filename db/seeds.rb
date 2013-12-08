@@ -1,1 +1,3 @@
 Client.create name: "Barbara Currier", start_date: "2010-02-03T04:05:06+07:00", end_date: "2013-08-03T04:05:06+07:00", user_id: "1", created_at: "2013-11-01T04:05:06+07:00", updated_at: "2013-011-01T04:05:06+07:00"
+Client.create name: "Votacall", start_date: "2011-02-03T04:05:06+05:00", end_date: "2013-08-03T04:05:06+05:00", user_id: "1", created_at: "2013-11-07T04:05:06+07:00", updated_at: "2013-011-07T04:05:06+07:00"
+Client.create name: "Gale Pryoy", start_date: "2009-02-03T04:05:06+07:00", end_date: "2013-11-03T04:05:06+07:00", user_id: "2", created_at: "2013-11-01T04:05:06+07:00", updated_at: "2013-011-01T04:05:06+07:00"
