@@ -5,9 +5,8 @@ class ClientsController < ApplicationController
     if params[:id]
       respond_with Client.find(params[:id])
     else
-      respond_with Client.all
+      respond_with User.find(current_user).clients
     end
-      
   end
 
   def create

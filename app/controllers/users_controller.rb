@@ -1,9 +1,13 @@
 class UsersController < ApplicationController
-  before_filter :authenticate_user!
+  before_filter :authenticate_user!, except: :active 
   respond_to :json
 
   def index
     respond_with current_user
+  end
+
+  def active
+    respond_with active: user_signed_in?
   end
 
   def gravatar

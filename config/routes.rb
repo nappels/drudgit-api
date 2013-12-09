@@ -9,8 +9,8 @@ FreelanceApi::Application.routes.draw do
   end
 
   get 'users/gravatar' => 'users#gravatar'
-
   get '/users.json', to: 'users#index', as: 'user_root'
+  get '/users/active' => 'users#active'
 
   root to: "users#index"
 
