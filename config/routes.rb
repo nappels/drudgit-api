@@ -12,7 +12,7 @@ FreelanceApi::Application.routes.draw do
 
   get '/users.json', to: 'users#index', as: 'user_root'
 
-  root to: "clients#api"
+  root to: "users#index"
 
   get 'clients/' => 'clients#index'
   post 'clients/' => 'clients#create'
