@@ -11,6 +11,7 @@ class ClientsController < ApplicationController
 
   def create
     @client = Client.new(safe_client_params)
+    @client.user_id = current_user.id
     if @client.save   
       respond_with(@client, location: clients_url)
     end
