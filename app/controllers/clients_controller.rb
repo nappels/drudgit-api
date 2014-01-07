@@ -1,4 +1,7 @@
 class ClientsController < ApplicationController
+ 
+  # Looks good
+ 
   respond_to :json
 
   def index

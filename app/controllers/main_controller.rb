@@ -1,8 +1,12 @@
 class MainController < ApplicationController
+
+  # This method looks good, but the one thing suggestion I would make is to use a more descriptive controller name
+
   before_filter :authenticate_user!
-  responsd_to :json
+  respond_to :json
 
   def session
-    responsd_with current_user
+    respond_with current_user
   end
+
 end

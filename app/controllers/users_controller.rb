@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+
   before_filter :authenticate_user!, except: :active 
   respond_to :json
 
@@ -12,6 +13,7 @@ class UsersController < ApplicationController
 
   def gravatar
     @gravatar = Gravatar.new(params[:email]).image_url
-    respond_with imageUrl: @gravatar
+    respond_with imageUrl: @gravatar  # Consider using snake_case here
   end
+
 end
